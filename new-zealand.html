@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
     <title>New Zealand</title>
   </head>
 
@@ -11,38 +12,29 @@
       <h1>New Zealand</h1>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#geography">Geography</a></li>
-        <li><a href="#environment">Environment</a></li>
-        <li><a href="#communications">Communications</a></li>
-      </ul>
-    </nav>
-
     <main>
-      <section>
-        <h2 id="about">About</h2>
-          <p>New Zealand is an independant island-nation that is located in the Pacific Ocean, just about 1,300 miles south east of Australia.</p>
-          <p>It is believed that Polynesian Settlers may have arrived to New Zealand in the late <time datetime="1200">1200's</time></p>
-          <p>Once a colony of the <abbr title="United Kingdom">UK</abbr>, it declared its independence in <time datetime="1947">1947</time>.</p>
+      <section id="about">
+        <h2>About</h2>
+          <p class="sub">New Zealand is an independant island-nation that is located in the Pacific Ocean, just about 1,300 miles south east of Australia.</p>
+          <p class="sub">It is believed that Polynesian Settlers may have arrived to New Zealand in the late <time datetime="1200">1200's</time></p>
+          <p class="sub">Once a colony of the <abbr title="United Kingdom">UK</abbr>, it declared its independence in <time datetime="1947">1947</time>.</p>
 
-          <figure>
+          <figure id="flag">
             <img src="images/nz-flag.png" alt="New Zealand's national flag" />
             <figcaption>New Zealand's National Flag PNG, 80 KB (image from: <a href="https://www.cia.gov/the-world-factbook/">CIA World Factbook</a>)</figcaption>
           </figure>
 
-          <figure>
+          <figure id="anthem">
             <audio src="audio/new-zealand-anthem.mp3" controls></audio>
             <figcaption>New Zealand Anthem by <a href="https://www.navyband.navy.mil/media/ceremonial">The United States Navy Band</a></figcaption>
           </figure>
       </section>
 
-      <section>
-        <h2 id="geography">Geography</h2>
-          <p>New Zealand is located in Oceania, in the islands in the South Pacific Ocean, southeast of Australia.</p>
+      <section id="geography">
+        <h2>Geography</h2>
+          <p class="sub">New Zealand is located in Oceania, in the islands in the South Pacific Ocean, southeast of Australia.</p>
 
-          <article>
+          <article id="geolist">
             <h3>Area</h3>
               <ul>
                 <li>Total: 268,838 <abbr title="square">sq</abbr> <abbr title="kilometers">km</abbr></li>
@@ -55,7 +47,7 @@
             <h3>Area, Comparative</h3>
               <p> New Zealand is almost twice the size of the <abbr title="United States">US</abbr> state, North Carolina and is roughly the same size as US state Colorado.</p>
 
-              <figure>
+              <figure id="map">
                 <img src="images/nz-area.png" alt="new zealand size comparison to north carolina" />
                 <figcaption>New Zealand size comparison to North Carolina PNG, 102 KB (image from: <a href="https://www.cia.gov/the-world-factbook/">CIA World Factbook</a>)</figcaption>
               </figure>
@@ -65,19 +57,35 @@
             <h3>Land Use</h3>
                 <p>New Zealand's land use is primarily for agricultural purposes, which makes up 43.2% of the total land area. The breakdown is as follows:</p>
 
-                  <ol>
-                    <li>Permanent Pasture: 41.1% (2018 <abbr title="estimated">est.</abbr>)</li>
-                    <li>Arable Land: 1.8% (2018 est.)</li>
-                    <li>Permanent Crops: 0.3% (2018 est.)</li>
-                  </ol>
+                <table class="tb" title="Land Use Breakdown">
+                  <tr>
+                    <th>Purpose</th>
+                    <th>Percent (2018 <abbr title="estimated">est.</abbr>)</th>
+                  </tr>
+                  <tr>
+                    <td>Permanent Pasture</td>
+                    <td>41.1%</td>
+                  </tr>
+                  <tr>
+                    <td>Arable Land</td>
+                    <td>1.8%</td>
+                  </tr>
+                  <tr>
+                    <td>Permanent Crops</td>
+                    <td>0.3%</td>
+                  </tr>
+                  <tr>
+                    <td>Forests</td>
+                    <td>31.4%</td>
+                  </tr>
+                </table>
 
-                <p> Forests also make up 31.4% of the land</p>
           </article>
       </section>
 
-      <section>
-        <h2 id="environment">Environment</h2>
-          <p> Given New Zealand's geographical location and land mass composure, the environment is a steadfast subject.</p>
+      <section id="environment">
+        <h2>Environment</h2>
+          <p class="sub"> Given New Zealand's geographical location and land mass composure, the environment is a steadfast subject.</p>
 
         <article>
           <h3>Current Issues</h3>
@@ -106,22 +114,31 @@
 
         <article>
           <h3>Resource Revenue</h3>
-            <h4>Revenue from Forest Resources</h4>
-              <ul>
-                <li>Forest revenues: 0.5% of GDP (2018 <abbr title="estimated">est.</abbr>)</li>
-                <li>Ranks 65th in the world for forest production revenue</li>
-              </ul>
-            <h4>Revenue from Coal Resources</h4>
-              <ul>
-                <li>Coal revenues: 0.03% of GDP (2018 est.)</li>
-                <li>Ranks 37th in the world for coal production revenue</li>
-              </ul>
+
+            <table class="tb" title="Resource Revenue">
+              <tr>
+                <th>Resource</th>
+                <th>% of GDP</th>
+                <th>World Rank</th>
+              </tr>
+              <tr>
+                <td>Forest</td>
+                <td>0.5%</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>Coal</td>
+                <td>0.03%</td>
+                <td>37</td>
+              </tr>
+            </table>
+
         </article>
       </section>
 
-      <section>
-        <h2 id="communications">Communications</h2>
-          <p>Despite being a small island nation, New Zealand has a robust communications infrastructure</p>
+      <section id="communications">
+        <h2>Communications</h2>
+          <p class="sub">Despite being a small island nation, New Zealand has a robust communications infrastructure</p>
 
         <article>
           <h3>Telecommunications</h3>
