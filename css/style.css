@@ -13,7 +13,6 @@ body {
 }
 
 h1 {
-  font-family: "Inter", "Nunito", "Arial", "Helvetica", sans-serif;
   font-size: 72px;
   font-weight: 600;
   text-align: center;
@@ -49,7 +48,6 @@ main {
 }
 
 h2 {
-  font-family: "Nunito", "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   text-align: center;
   border: 4px solid #ADD8E6;
@@ -59,14 +57,12 @@ h2 {
 
 h3,
 h4 {
-  font-family: "Nunito", "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   border-bottom: 1px solid #000000;
   text-align: center;
 }
 
 p {
-  font-family: "Nunito", "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 300;
   text-justify: left;
   max-width: 60ch;
