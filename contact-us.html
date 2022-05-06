@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/javascript.js"></script>
+    <title>Cody Creations - 3D Printing & Finishing</title>
+  </head>
+
+<body>
+  <header id="header">
+    <img src="images/cody-creations-logo.png" alt="Cody Creates Logo" width="500" height="250" id="logo"/>
+  </header>
+   
+  <div id="article">
+    <article>
+      <h1>Contact Us</h1>
+       <p>Questions? Comments? Want to find out about comissioning Cody Creations?</p>
+       <p>Contact us! We would love to hear from you!</p> 
+       
+        <form name="myForm" action="notskilledenough.php" onsubmit="return validateForm()" method="post">
+          <table class="form-style">
+             <tr>
+                <td>
+                   <label>
+                      Your name <span class="required">*</span>
+                   </label>
+                </td>
+                <td>
+                   <input type="text" name="name" class="long"/>
+                   <span class="error" id="errorname"></span>
+                </td>
+             </tr>
+             <tr>
+                <td>
+                   <label>
+                     Your email address <span class="required">*</span>
+                   </label>
+                </td>
+                <td>
+                   <input type="email" name="email" class="long"/>
+                   <span class="error" id="erroremail"></span>
+                </td>
+             </tr>
+             <tr>
+                <td>
+                   <label>
+                      Message <span class="required">*</span>
+                   </label>
+                </td>
+                <td>
+                   <textarea name="message" class="long field-textarea"></textarea>
+                   <span class="error" id="errormsg"></span>
+                </td>
+             </tr>
+             <tr>
+                <td></td>
+                <td>
+                   <input type="submit" value="Send">      
+                   <input type="reset" value="Reset"> 
+                </td>
+             </tr>
+          </table>
+       </form>
+    
+      <a href="https://www.facebook.com/codiferous"><img src="images/social/facebook.png" alt="facebook logo"/></a>
+      <a href="https://www.instagram.com/codycodycody/"><img src="images/social/instagram.png" alt="instagram logo"/></a>
+      <a href="https://www.linkedin.com/in/codymike/"><img src="images/social/linked-in.png" alt="linkedin logo"/></a>
+
+    </article>
+  </div>
+
+    <nav id="nav">
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+     </ul>
+    </nav>
+
+    <footer id="footer">
+      ©2022 <a href="mailto:mikecody@miami.edu">Mike Cody</a> All rights reserved.
+    </footer>
+  </body>
+</html>
